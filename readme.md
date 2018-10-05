@@ -1,9 +1,9 @@
-# BWPlay-API
+# PWRank
+a open source perfect world automatic rank system
 
-## Official Documentation
+Compiled project in this link -> http://www.mediafire.com/file/iuf5st71neefav1/PWRank.tgz
 
-https://documenter.getpostman.com/view/491427/RWaRNkC3
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within API, please send an e-mail to Adriano Luis at dicodonsg@hotmail.com. All security vulnerabilities will be promptly addressed.
+## Requirements
+Java 7 | 
+PHP 5.6 | 
+API: https://github.com/adrianolls/bwplay-api 
