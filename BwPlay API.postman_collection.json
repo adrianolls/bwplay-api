@@ -1,0 +1,823 @@
+{
+	"info": {
+		"_postman_id": "d9aeb350-4d43-ebbb-1cdb-0c238508fdbb",
+		"name": "BwPlay API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/game/email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "itemid",
+							"value": "19784",
+							"type": "text"
+						},
+						{
+							"key": "stack",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "max_stack",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "data",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "proctype",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "expire_date",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "guid1",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "guid2",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "mask",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "roleid",
+							"value": "1034",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "testando envio de emails",
+							"type": "text"
+						},
+						{
+							"key": "context",
+							"value": "se você está lendo essa mensagem, o envio de emails funciona",
+							"type": "text"
+						},
+						{
+							"key": "money",
+							"value": "100050",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/game/email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"game",
+						"email"
+					]
+				},
+				"description": "Email request"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/role/banrole",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "roleid",
+							"value": "198592",
+							"type": "text"
+						},
+						{
+							"key": "reason",
+							"value": "ban",
+							"type": "text"
+						},
+						{
+							"key": "time",
+							"value": "100",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/role/banrole",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"role",
+						"banrole"
+					]
+				},
+				"description": "Email request"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/role/muterole",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "roleid",
+							"value": "198592",
+							"type": "text"
+						},
+						{
+							"key": "reason",
+							"value": "mute role",
+							"type": "text"
+						},
+						{
+							"key": "time",
+							"value": "100",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/role/muterole",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"role",
+						"muterole"
+					]
+				},
+				"description": "Email request"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/role/meridianfull",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "roleid",
+							"value": "198593",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/role/meridianfull",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"role",
+						"meridianfull"
+					]
+				},
+				"description": "Email request"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/game/setdoublerate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "value",
+							"value": "25",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "204",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/game/setdoublerate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"game",
+						"setdoublerate"
+					]
+				},
+				"description": "Email request"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/role/titlefull",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "roleid",
+							"value": "198593",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/role/titlefull",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"role",
+						"titlefull"
+					]
+				},
+				"description": "Email request"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/role/banaccount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userid",
+							"value": "199040",
+							"type": "text"
+						},
+						{
+							"key": "time",
+							"value": "300",
+							"type": "text"
+						},
+						{
+							"key": "reason",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "operation",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/role/banaccount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"role",
+						"banaccount"
+					]
+				},
+				"description": "Email request"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/game/broadcast",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "roleid",
+							"value": "1034",
+							"type": "text"
+						},
+						{
+							"key": "channel",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "Testando a nova API da BwPlay",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/game/broadcast",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"game",
+						"broadcast"
+					]
+				},
+				"description": "Broadcast Request"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/game/onlines",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://54.39.29.87/api/game/onlines",
+					"protocol": "http",
+					"host": [
+						"54",
+						"39",
+						"29",
+						"87"
+					],
+					"path": [
+						"api",
+						"game",
+						"onlines"
+					]
+				},
+				"description": "Onlines Request"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/user/roles",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userid",
+							"value": "48",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/user/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"user",
+						"roles"
+					]
+				},
+				"description": "User Roles Retrive"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/role/character",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "roleid",
+							"value": "1034",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/role/character",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"role",
+						"character"
+					]
+				},
+				"description": "Role Character"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/role/faction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "factionid",
+							"value": "2034",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/role/faction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"role",
+						"faction"
+					]
+				},
+				"description": "Role Character"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/role/userfaction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "roleid",
+							"value": "198592",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/role/userfaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"role",
+						"userfaction"
+					]
+				},
+				"description": "Role Character"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/role/charactername",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "rolename",
+							"value": "[GM]Riddle",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/role/charactername",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"role",
+						"charactername"
+					]
+				},
+				"description": "Role Character"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/role/character",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "roleid",
+							"value": "1034",
+							"type": "text"
+						},
+						{
+							"key": "data",
+							"value": "{\"base\":{\"version\":1,\"id\":1034,\"name\":\"DevolverItem\",\"race\":2,\"cls\":4,\"gender\":0,\"custom_data\":\"0170001080808000750075003280800064008080808080808080808080808080808080808080808080807e006a006900680080808080808080404c4c4040804065007a008080808080804040808080805f006f00808080806c008080840081008700808080806b0080404040720080800000a03d6300000038ff19120d000000ede7f3ffffffffffde5c3fffffffffff3fdc3eff2a3f43ff37704fff0000000000000000ffffffff8080808080800000\",\"config_data\":\"030000007801fbc0cac0c0cdc0c0f01f0b000a3330413188cd0c65f3833840c002c420791860873296036964e360f2a3f468088c86c0d00c0136a0b319a118c4060150de07b141e5020883d8c0e20425ef83ca011ea0d85007c3c10f0d1f7e31313cfccaea018c486e4606461818ea71432bf783d237285d63053f40b98181411da84819a2001c9cc04c02a4198c80240b23302704f05f1104e125a1495a3b2e30a876fc382ab860c965c12a88768619407e0a507f354315a3b3554c28436a51714c764e6a526a9142497e6e6215834b7e795e4e7e624a714c887f5090ab1f434c6a4e6a6e6a5e494c68716a914b6209438c4f62657e69498ca181b1895e665e26c3c2ed0c2b920594fe04354983eae41540078100d44a100b04c014980992024902c52012201632174d16c4051900550c351aa40504a8eceaddd13e0c205f6c3865af55911c08f61588bde6afa278f784f9e0d2e66c22440d501ee40205470686067b26a033216e82ba0cc60529a13af8ff1f62246e1a0032a49d70\",\"custom_stamp\":0,\"status\":1,\"delete_time\":0,\"create_time\":1501444881,\"lastlogin_time\":1519242107,\"help_states\":\"01001e009d93a793a893a993aa93ab93bb93c593f303f483fd8307841184db87e5872584ef872f84f987c38b03880d8817882188ab8f2b88b58f35883f8893937f80\",\"spouse\":0,\"userid\":48,\"cross_data\":\"\",\"reserved2\":0,\"reserved3\":0,\"reserved4\":0},\"status\":{\"version\":1,\"level\":101,\"level2\":21,\"exp\":14299476,\"sp\":47704432,\"pp\":0,\"hp\":10695,\"mp\":1551,\"posx\":2191,\"posy\":220.2930450439453,\"posz\":3061,\"worldtag\":1,\"invader_state\":0,\"invader_time\":0,\"pariah_time\":0,\"reputation\":2597,\"custom_status\":\"\",\"filter_data\":\"00000000\",\"charactermode\":\"\",\"instancekeylist\":\"000000002f00000069000000123b7e596a000000123b7e596b000000123b7e596c000000123b7e596d000000123b7e596e000000123b7e596f000000123b7e5972000000123b7e5973000000123b7e5974000000123b7e5975000000123b7e597b000000123b7e597c000000123b7e597d000000123b7e597e000000123b7e597f000000123b7e5980000000123b7e5981000000123b7e59e6000000123b7e59e7000000123b7e59e8000000123b7e59e9000000123b7e59ea000000123b7e59eb000000123b7e5983000000123b7e5987000000123b7e598a000000123b7e598b000000123b7e598d000000123b7e5990000000123b7e5991000000123b7e5992000000123b7e5994000000123b7e5995000000123b7e59a2000000123b7e59a6000000123b7e59a7000000123b7e5993000000123b7e5905020000123b7e5904020000123b7e5906020000123b7e5907020000123b7e5908020000123b7e5909020000123b7e590a020000123b7e590b020000123b7e590c020000123b7e5900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000690000000a040000113b7e596a0000000a040000113b7e596b0000000a040000113b7e596c0000000a040000113b7e596d0000000a040000113b7e596e0000000a040000113b7e596f0000000a040000113b7e59720000000a040000113b7e59730000000a040000113b7e59740000000a040000113b7e59750000000a040000113b7e597b0000000a040000113b7e597c0000000a040000113b7e597d0000000a040000113b7e597e0000000a040000113b7e597f0000000a040000113b7e59800000000a040000113b7e59810000000a040000113b7e59830000000a040000113b7e59870000000a040000113b7e598a0000000a040000113b7e598b0000000a040000113b7e598d0000000a040000113b7e59900000000a040000113b7e59910000000a040000113b7e59920000000a040000113b7e59930000000a040000113b7e59940000000a040000113b7e59950000000a040000113b7e59a20000000a040000113b7e59a60000000a040000113b7e59a70000000a040000113b7e59e60000000a040000113b7e59e70000000a040000113b7e59e80000000a040000113b7e59e90000000a040000113b7e59ea0000000a040000113b7e59eb0000000a040000113b7e59040200000a040000113b7e59050200000a040000113b7e59060200000a040000113b7e59070200000a040000113b7e59080200000a040000113b7e59090200000a040000113b7e590a0200000a040000113b7e590b0200000a040000113b7e590c0200000a040000113b7e59\",\"dbltime_expire\":0,\"dbltime_mode\":0,\"dbltime_begin\":1519012800,\"dbltime_used\":0,\"dbltime_max\":21600,\"time_used\":5573263,\"dbltime_data\":\"01000000000000007bcb8d5a\",\"storesize\":0,\"petcorral\":\"00000001010000000080c0e70300000000000000000000bf60000000000000c0600000000000000000803f0b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"property\":\"c40000000300000010010000310000004c1a00008d050000040000000100000000000040cdcc9c40000040400000a0400000000065000000650000001000000000002040000000000000000000000000000000000000000000000000000000000000000000000000000000000100000001000000000000000000000000000000000000000000000001000000000000008f010000\",\"var_data\":\"07000000000000000000000001000000f4af60f700000000000000005000000000000000ffffffff000000000000000000000000f10000000000000000000000\",\"skills\":\"270000000c000000000000000a0000000d000000000000000a00000052000000000000000a00000053000000000000000a00000066000000000000000a00000067000000000000000100000068000000000000000a00000069000000000000000a0000006a000000000000000a0000006b000000000000000a0000006c000000000000000a0000006d000000000000000a0000006f000000000000000a00000070000000000000000300000095000000000000000a00000096000000000000000a00000097000000000000000a00000098000000000000000a00000099000000000000000a0000009a000000000000000a0000009b000000000000000a0000009c000000000000000a0000009e00000000000000010000009f0000000100000001000000a00000000000000001000000a10000000000000001000000a2000000000000000a000000a70000000000000001000000b9000000000000000a000000ba0000000000000001000000bc0000000000000001000000c3000000000000000a000000e60000000000000001000000e700000000000000010000006801000000000000010000006e0100000000000001000000ee0100000000000001000000f00100000000000001000000060200000000000001000000\",\"storehousepasswd\":\"\",\"waypointlist\":\"ad0de9034d04b1041505dd0509070a070b070c076d07d107350837089908fd08290a8d0af10a550b1d0c490d750ed90eda0edb0e3d0f5d126910cd1031119611f9118913ed135114b61419157d15a9160d177117d51739189d18b90b3211b714bd1bbe1bdd1ede1e791e7a1ec919ca192d1a911a921af51af61a591b33233423352336233d233e233f23482349234a234b234c234d234e234f235023\",\"coolingtime\":\"ffffffff00000000\",\"npc_relation\":\"0001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"multi_exp_ctrl\":\"00000000000000000000000000000000bdd38d5a000000007bcb8d5a\",\"storage_task\":\"0000000000000000000000000000000000000000000000000000000000000000000000000000000045594a59435939593f59000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000087cb8d5a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"faction_contrib\":\"000000000000000000000000\",\"force_data\":\"0000000000000000000000000000000000\",\"online_award\":\"0100000070898d5ac0a8000000000000\",\"profit_time_data\":\"c0a80000b0e08c5a\",\"country_data\":\"\",\"king_data\":\"\",\"meridian_data\":\"0000000000000000000000000000000200000064000044af0000000100000000000000000000000000000000000000000000000000000000\",\"extraprop\":\"0300000001145a8dcb7b0000000000000000000000000000000000000003040000000a000000053c30d5905a0000000006000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\"title_data\":\"00000000000000000000\",\"reincarnation_data\":\"000000000000000000000000000000000000\",\"realm_data\":\"00000000000000000000000000000000\",\"reserved2\":0,\"reserved3\":0},\"pocket\":{\"icapacity\":32,\"timestamp\":33,\"money\":175399,\"inv\":[{\"id\":13331,\"pos\":0,\"count\":20,\"max_count\":9999,\"data\":\"010000003303000001000000\",\"proctype\":23,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":60886,\"pos\":1,\"count\":1,\"max_count\":100,\"data\":\"1ec90000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":41010,\"pos\":8,\"count\":1,\"max_count\":1,\"data\":\"6f770000\",\"proctype\":16403,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0}],\"reserved6\":0,\"reserved7\":0},\"equipment\":{\"eqp\":[{\"id\":8347,\"pos\":1,\"count\":1,\"max_count\":1,\"data\":\"4400ff036900000000000000bb170000d859000024000412790056006900630074006f00720069006100000000000000000000000000d700000000000000000000002a010000000000000000000002000500f2180000f21800000600000037210000010000002d2600002a010000772400000500000098a400003200000098a4000032000000f44600008900000004000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":1485030166,\"guid2\":16786875,\"mask\":1073741826},{\"id\":15006,\"pos\":2,\"count\":1,\"max_count\":1,\"data\":\"5a00ff03000000000000000006180000e45700002400041253006c006500650070006c00650073007300000000000000000000000000000000000601000006010000060100000601000006010000000000000400000083210000050000006a210000010000005125000082000000464700006b00000004000000\",\"proctype\":32791,\"expire_date\":0,\"guid1\":1484923571,\"guid2\":16786114,\"mask\":1073741828},{\"id\":9372,\"pos\":3,\"count\":1,\"max_count\":1,\"data\":\"4500ff0300000000000000002e090000204e00002400040c4e006100740075007200650000000000ae0000000000000000000000fa000000fa000000fa000000fa000000fa00000004000d00f2180000f2180000f2180000f21800000800000032210000fa000000422100000a000000472100000600000098a400003200000098a400003200000098a400003200000098a4000032000000084700006700000004000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":1484834139,\"guid2\":16785588,\"mask\":1073741832},{\"id\":14926,\"pos\":4,\"count\":1,\"max_count\":1,\"data\":\"5a00ff03e30000003100000094430000b88800002400041052007500730073006f00310031003300a30600000000000000000000500000008f0200008f0200008f0200008f0200008f02000003000500f3180000f3180000f318000007000000742200005000000093220000a7000000bb2500000700000099a400003e00000099a400003e00000099a400003e000000f6460000ac00000004000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":1500381413,\"guid2\":16797435,\"mask\":1073741840},{\"id\":20956,\"pos\":5,\"count\":1,\"max_count\":1,\"data\":\"5f00ff030000000000000000c72e000030750000240000000000000000000000fb00000000000000a0000000a0000000a0000000a0000000a000000000000000040000006425000078000000a425000005000000972300005b000000474700009b00000005000000\",\"proctype\":19,\"expire_date\":0,\"guid1\":1502746738,\"guid2\":1224743408,\"mask\":1073741856},{\"id\":14932,\"pos\":6,\"count\":1,\"max_count\":1,\"data\":\"5a00ff03e300000031000000141e00000c7b00002400041253006c006500650070006c0065007300730021050000000000000000000050000000350200003502000035020000350200003502000003000500f2180000f2180000f2180000070000007422000050000000b025000007000000bb25000007000000f6460000e60000000500000098a400003200000098a400003200000098a4000032000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":1484939522,\"guid2\":16786230,\"mask\":1073741888},{\"id\":14940,\"pos\":7,\"count\":1,\"max_count\":1,\"data\":\"6300ff03fa00000036000000672500006c6b00002400041045006d006d0040006e00750065006c00c303000000000000000000005a0000009f0100009f0100009f0100009f0100009f01000004000d00f3180000f3180000f3180000f318000008000000752200005a000000ad25000009000000b22500000900000099a400003e00000099a400003e00000099a400003e00000099a400003e000000f74600008600000003000000\",\"proctype\":32791,\"expire_date\":0,\"guid1\":1503572136,\"guid2\":16792161,\"mask\":1073741952},{\"id\":14946,\"pos\":8,\"count\":1,\"max_count\":1,\"data\":\"6300ff03fa00000036000000ac2600006c6b00002400041045006d006d0040006e00750065006c00ab03000000000000000000005a000000360100003601000036010000360100003601000003000500f3180000f3180000f318000007000000752200005a000000512100000200000095220000d800000099a400003e00000099a400003e00000099a400003e000000f74600008600000003000000\",\"proctype\":32791,\"expire_date\":0,\"guid1\":1503518612,\"guid2\":16791667,\"mask\":1073742080},{\"id\":8384,\"pos\":9,\"count\":1,\"max_count\":1,\"data\":\"4d00ff03000000000000000079090000204e00002400040a54006f0075006b00610068000000000000000000000000000000000000000000000000000000000000000000000000000000050000008721000032000000572300001c000000a4250000060000004d2a02000e000000314700009b00000005000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":1482196152,\"guid2\":16788583,\"mask\":1073743360},{\"id\":8384,\"pos\":10,\"count\":1,\"max_count\":1,\"data\":\"4d00ff0300000000000000003b0b0000204e00002400041253006c006500650070006c0065007300730068000000000000000000000000000000000000000000000000000000000000000000000000000000050000008721000032000000572300001c000000a425000005000000314700007400000004000000ff29020002000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":1484803673,\"guid2\":16785507,\"mask\":1073743360},{\"id\":12783,\"pos\":12,\"count\":1,\"max_count\":1,\"data\":\"7d010000580200001e000200180000000800000000000040000080400410460041004e005400410053004d0041000000\",\"proctype\":8,\"expire_date\":0,\"guid1\":1480639259,\"guid2\":16783141,\"mask\":4096},{\"id\":38102,\"pos\":13,\"count\":1,\"max_count\":1,\"data\":\"0a0000009509000001000000\",\"proctype\":8,\"expire_date\":0,\"guid1\":1499326589,\"guid2\":16783354,\"mask\":8192},{\"id\":38103,\"pos\":14,\"count\":1,\"max_count\":1,\"data\":\"0a0000001810000001000000\",\"proctype\":8,\"expire_date\":0,\"guid1\":1499326589,\"guid2\":16783355,\"mask\":16384},{\"id\":38104,\"pos\":15,\"count\":1,\"max_count\":1,\"data\":\"0a0000001010000001000000\",\"proctype\":8,\"expire_date\":0,\"guid1\":1499326589,\"guid2\":16783356,\"mask\":32768},{\"id\":17591,\"pos\":18,\"count\":1,\"max_count\":1,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":262144},{\"id\":15761,\"pos\":20,\"count\":1,\"max_count\":1,\"data\":\"6d020d000000003f\",\"proctype\":8,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":1048576},{\"id\":15760,\"pos\":21,\"count\":1,\"max_count\":1,\"data\":\"6d5b19000000403f\",\"proctype\":8,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":2097152}]},\"storehouse\":{\"icapacity\":80,\"money\":0,\"store\":[{\"id\":8559,\"pos\":0,\"count\":285,\"max_count\":50000,\"data\":\"0000ffff000000000000000064000000640000001400000062210000460000000000000007000000100000000000000001000000e625000001000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":1073743872},{\"id\":20350,\"pos\":1,\"count\":1,\"max_count\":1,\"data\":\"5c00ff03340000000000920068290000682900002400040e470041005200470055004c0040005a000000000000000000000000000000080500000000000000000000080500000000000003000000000000000000000000000000010000004821000008000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":1073741952},{\"id\":5246,\"pos\":2,\"count\":1,\"max_count\":1,\"data\":\"5000ff03540000005400000010270000204e000024000000530200000000000000000000000000000000000000000000c8050000000000000000000002000000000000000000000002000000282100000000803e9122000076000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":1073741840},{\"id\":6175,\"pos\":4,\"count\":1,\"max_count\":1,\"data\":\"4e00ff03000000000000000064190000c8320000240002004700000000000000000000000000000000000000000000000000000000000000000000000000000001000000542300000b000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":1073743360},{\"id\":6218,\"pos\":5,\"count\":1,\"max_count\":1,\"data\":\"5200ff030000000000000000901a000020350000240002000000000000000000c3000000000000000000000000000000000000000000000000000000000000000200000049240000050000004f24000005000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":1073741828},{\"id\":6239,\"pos\":6,\"count\":1,\"max_count\":1,\"data\":\"5200ff030000000000000000901a000020350000240002000000000000000000000000000000000000000000fd000000fd00000000000000fd00000000000000010000004924000005000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":1073741828},{\"id\":6239,\"pos\":7,\"count\":1,\"max_count\":1,\"data\":\"5200ff030000000000000000901a000020350000240000000000000000000000000000000000000053010000d6000000d6000000d60000000000000000000000030000003f24000005000000042600007d0000003f24000005000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":1073741828},{\"id\":6239,\"pos\":8,\"count\":1,\"max_count\":1,\"data\":\"5200ff030000000000000000901a0000203500002400000000000000000000003f0000000000000000000000000000000000000038010000380100000000000003000000942300003f0000004924000004000000454700001600000001000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":1073741828},{\"id\":6260,\"pos\":9,\"count\":1,\"max_count\":1,\"data\":\"5200ff030000000000000000901a000020350000240002000000000000000000000000007b00000000000000000000007d00000000000000000000000000000002000000622600007d0000004f24000004000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":1073741828},{\"id\":24721,\"pos\":10,\"count\":7,\"max_count\":9999,\"data\":\"\",\"proctype\":19,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":8644,\"pos\":11,\"count\":62,\"max_count\":1000,\"data\":\"e20400000a000000983a00003c000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":8645,\"pos\":12,\"count\":33,\"max_count\":1000,\"data\":\"400600000a000000983a000046000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":8646,\"pos\":13,\"count\":12,\"max_count\":1000,\"data\":\"9e0700000a000000983a000050000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":6385,\"pos\":14,\"count\":1,\"max_count\":1000,\"data\":\"010000009724000028000000010000009724000028000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":32768},{\"id\":6367,\"pos\":15,\"count\":1,\"max_count\":1000,\"data\":\"010000007a24000019000000010000007b24000029000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":32768},{\"id\":12830,\"pos\":16,\"count\":4,\"max_count\":100,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":6384,\"pos\":17,\"count\":1,\"max_count\":1000,\"data\":\"010000009624000020000000010000009624000020000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":32768},{\"id\":35298,\"pos\":18,\"count\":1,\"max_count\":9999,\"data\":\"b8680000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":12351,\"pos\":19,\"count\":1,\"max_count\":1,\"data\":\"01000000ff0300000000000034300000000000003f300000020000000100000000000000000000000000000000000000000000000000000000000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":5639,\"pos\":20,\"count\":433,\"max_count\":9999,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":22421,\"pos\":21,\"count\":1,\"max_count\":50000,\"data\":\"e9430000\",\"proctype\":19,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":797,\"pos\":22,\"count\":12,\"max_count\":100,\"data\":\"\",\"proctype\":8,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":798,\"pos\":23,\"count\":32,\"max_count\":100,\"data\":\"\",\"proctype\":8,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":801,\"pos\":24,\"count\":32,\"max_count\":100,\"data\":\"\",\"proctype\":8,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":802,\"pos\":25,\"count\":16,\"max_count\":100,\"data\":\"\",\"proctype\":8,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":803,\"pos\":26,\"count\":38,\"max_count\":100,\"data\":\"\",\"proctype\":8,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":805,\"pos\":27,\"count\":2,\"max_count\":100,\"data\":\"\",\"proctype\":8,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":806,\"pos\":28,\"count\":2,\"max_count\":100,\"data\":\"\",\"proctype\":8,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":807,\"pos\":29,\"count\":20,\"max_count\":100,\"data\":\"\",\"proctype\":8,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":808,\"pos\":30,\"count\":30,\"max_count\":100,\"data\":\"\",\"proctype\":8,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":811,\"pos\":31,\"count\":12,\"max_count\":100,\"data\":\"\",\"proctype\":131080,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":817,\"pos\":32,\"count\":44,\"max_count\":100,\"data\":\"\",\"proctype\":8,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":818,\"pos\":33,\"count\":44,\"max_count\":100,\"data\":\"\",\"proctype\":8,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":826,\"pos\":34,\"count\":12,\"max_count\":100,\"data\":\"\",\"proctype\":131080,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":831,\"pos\":35,\"count\":15,\"max_count\":100,\"data\":\"\",\"proctype\":131080,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":12989,\"pos\":36,\"count\":1,\"max_count\":1,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":1503027841,\"guid2\":771758575,\"mask\":0},{\"id\":13002,\"pos\":37,\"count\":1,\"max_count\":1,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":1501331038,\"guid2\":738207704,\"mask\":0},{\"id\":13028,\"pos\":38,\"count\":1,\"max_count\":1,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":1501506956,\"guid2\":788536038,\"mask\":0},{\"id\":13028,\"pos\":39,\"count\":1,\"max_count\":1,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":1501506956,\"guid2\":788536040,\"mask\":0},{\"id\":13036,\"pos\":40,\"count\":1,\"max_count\":1,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":1488433814,\"guid2\":738207061,\"mask\":0},{\"id\":13057,\"pos\":41,\"count\":1,\"max_count\":1,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":1502808741,\"guid2\":788535506,\"mask\":0},{\"id\":13116,\"pos\":42,\"count\":1,\"max_count\":1,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":1503313511,\"guid2\":738204360,\"mask\":0},{\"id\":17810,\"pos\":43,\"count\":2,\"max_count\":10000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":19004,\"pos\":44,\"count\":25,\"max_count\":100,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":20443,\"pos\":45,\"count\":449,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":20443,\"pos\":46,\"count\":1000,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":20448,\"pos\":47,\"count\":3,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":20452,\"pos\":48,\"count\":986,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":20452,\"pos\":49,\"count\":427,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":20746,\"pos\":50,\"count\":10,\"max_count\":100,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":9590,\"pos\":51,\"count\":1,\"max_count\":1,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":1502738406,\"guid2\":788535493,\"mask\":0},{\"id\":10042,\"pos\":52,\"count\":9,\"max_count\":10,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":47309,\"pos\":53,\"count\":3,\"max_count\":999,\"data\":\"44830000\",\"proctype\":8,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":3368,\"pos\":54,\"count\":9,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":3369,\"pos\":55,\"count\":2,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":11784,\"pos\":56,\"count\":2,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":15228,\"pos\":57,\"count\":3,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":15241,\"pos\":58,\"count\":1,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":15250,\"pos\":59,\"count\":5,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":15251,\"pos\":60,\"count\":1,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":15263,\"pos\":61,\"count\":2,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":15279,\"pos\":62,\"count\":15,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":15780,\"pos\":63,\"count\":1,\"max_count\":100,\"data\":\"\",\"proctype\":19,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":19071,\"pos\":64,\"count\":2,\"max_count\":9999,\"data\":\"\",\"proctype\":16402,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":20453,\"pos\":65,\"count\":2,\"max_count\":9999,\"data\":\"\",\"proctype\":18,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":20479,\"pos\":66,\"count\":1,\"max_count\":1,\"data\":\"\",\"proctype\":55,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":20951,\"pos\":67,\"count\":1,\"max_count\":1,\"data\":\"5a00ff0300000000000000003075000030750000240001000000000000000000ce000000000000007d0000007d0000007d0000007d0000007d000000000000000300000063250000690000004e240000040000009623000051000000\",\"proctype\":19,\"expire_date\":0,\"guid1\":1503929610,\"guid2\":1224743486,\"mask\":1073741856},{\"id\":20946,\"pos\":68,\"count\":3,\"max_count\":9999,\"data\":\"\",\"proctype\":55,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":21043,\"pos\":69,\"count\":96,\"max_count\":99999,\"data\":\"\",\"proctype\":8,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":22103,\"pos\":70,\"count\":9,\"max_count\":9999,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":27941,\"pos\":71,\"count\":88,\"max_count\":99999,\"data\":\"\",\"proctype\":16403,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":31957,\"pos\":72,\"count\":116,\"max_count\":9999,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":35557,\"pos\":73,\"count\":6,\"max_count\":99999,\"data\":\"\",\"proctype\":16403,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":11581,\"pos\":74,\"count\":15,\"max_count\":2000,\"data\":\"1000000064000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":32097,\"pos\":75,\"count\":1,\"max_count\":999,\"data\":\"\",\"proctype\":8,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":11304,\"pos\":76,\"count\":3,\"max_count\":100,\"data\":\"1e000000cd02000001000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":11324,\"pos\":77,\"count\":4,\"max_count\":100,\"data\":\"3c000000d602000001000000\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":3366,\"pos\":78,\"count\":135,\"max_count\":99999,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":20491,\"pos\":79,\"count\":28,\"max_count\":50000,\"data\":\"\",\"proctype\":16403,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0}],\"size1\":0,\"size2\":0,\"size3\":120,\"reserved\":0},\"task\":{\"task_data\":\"23250100110001004364ffffff0102f5452900000044de0d0c000000000000000000000000000000456400ffffff02f14529000000ccf80d0c000000000000000000000000000000db02ffffff0302d8a3140000005467fc10000000000000000000000000000000050302ffffff023da3140000009488fc10000000000000000000000000000000fc4dffffffff023785080000008c30520d000000000000000000000000000000ff4dffffffff02160d05000000ccf3510d000000000000000000000000000000004effffffff02e12d030000009cdf510d000000000000000000000000000000fe4dffffffff02ef76020000001c08520d0000000000000000000000000000001036ffffffff029d6002000000e40f510e0000000000000000000000000000005436ffffff0a02ee5e02000000e4f64a0e000000000000000000000000000000dd3809ffff0b02cd5e020000003c574b0e000000000000000000000000000000e3380affffff02cd5e02000000bc7b4b0e0000000000000000000000000000002d0dffffffff02caba0000000004fa6710000000000000000000000000000000961bffffff0e021639000000007c57910f000000000000000000000000000000eb240dffffff02d93800000000ac7f910f000000000000000000000000000000e44cffffffff02702600000000c41c610d0000000000000000000000000000005137ffffff11024c250000000094323b0e000000000000000000000000000000583710ffffff02e321000000007c953b0e000000000000000000000000000000c36effffff1302161b00000000ac8a840b000000000000000000000000000000ce6e12ffffff02131b00000000c4af840b0000000000000000000000000000002f6fffffff1502161b000000005ce87d0b000000000000000000000000000000386f14ffffff02211a00000000e4037e0b0000000000000000000000000000007e77ffffffff02141b0000000074e80a0b0000000000000000000000000000004e9cffffff1802141b00000000bc8fe00a0000000000000000000000000000004f9c17ff1c1902141b000000001c9ee00a000000000000000000000000000000509c18ff1aff02141b000000008caae00a000000000000000000000000000000519c18191bff02141b00000000ccb7e00a000000000000000000000000000000529c181affff02141b000000000cc5e00a000000000000000000000000000000539c17181dff02141b0000000044d2e00a000000000000000000000000000000549c171c1eff02141b0000000064e2e00a000000000000000000000000000000559c171dffff02141b00000000eceee00a0000000000000000000000000000000ac9ffffff2002340800000000fcd49c0a0000000000000000000000000000000cc91fffffff022508000000003cf19c0a00000000000000000000000000000007c9ffffff2202f903000000006ca89c0a00000000000000000000000000000008c921ffffff02f903000000008cb59c0a000000000000000000000000000000\",\"task_complete\":\"3f0101000d000e000e001080100062001100d5011600d2026300d602d401d802d501e082d6013803d3025a03d4027c03d6027e03d7028803d8029003da029a03e0029d032903d20338030204590308045b034c047b0394047c03b0047d03ee047e03f2048103320589033c058d03480590034a059a039e059b03a2059c03bc059d03be05ca03c605d203ca05de03cc050204ce050504d8050804da054804e4054d04f80564042e069404300699043406b1043606b4043806ee043a06ef043c06f204400631054206330580063705de063c05e6064805e80649054a074a0540084b05440870054b089e055a089f055c08a2055e08b0056208bc056408be056e08bf057c08c105cc08c605d008c905d808ca05de08cb05f208cc05f608cd050c89ce056c09cf056e09d8057609d9058609da058a09e3058c09e405ac09e605be09f905c2092d06c4092e06c8092f06cc093006ce093106d0093506d2893606d4093706d6093806d8093906da093a06dc093b06520a3c065a0a3d06ea0a3e06180b4006ce8b4106320c4306348c7b065b0c8006608cdd06960cde063c8de506488de606900de706a40de806d00d4207d20d4b07d40da107d70d4108d80d4408de0d4508229946083a194a083c19580840195a084a195b0858195c0866195e0874195f08969b6108cc2062082422630826226408282269082a226f083a2279084e227c0806a47d080e24cd0832a4ce08c035d008c835d5080036d8081236dc082136df082c36f0084436f2085036f4085236f708e037040905380d093d3849096b386d09d0386e0944b96f09804870090e4e76099250770970518709fc53890930548a09005f8b0912678c0932758f095675ad090000be090000bf090000c0090000c2090000c3090000c4090000c5090000c9090000cb090000cd090000ce090000cf090000d0090000d1090000d2090000d3090100d4090000d5090000d6090000d7090000d8090100d9090000da090000db090000dc090000dd090000eb090000520a0000570a00005a0a0000710a0000ea0a0000f40a0000190b0000ca0b0100ce0b0100260c0100320c0000330c0100340c0100360c01005a0c00005d0c0000610c0100960c0000970c0000040d00003c0d01003d0d0000480d0100650d0000900d0000a30d0000a40d0000ae0d0100d10d0000d20d0000d30d0000d40d0000d50d0000d60d0000d70d0000d80d0000d90d0000da0d0000de0d0000df0d000022190100231901003b1900003c1900003d1900003e19000041190000441900004a1900004d190000581900005b190000671900006a190000741900001c1b0000961b0100e81d0000cc200000f12000002422000025220000262200002722000028220000292200002a2200002c2200003a2200004a2200004e22000005240100062401000e2400000f2400001024000032240100b1350000c0350000c5350000c8350000ff3500000036000001360000123600001336000020360000233600002c360000333600004436000050360000513600005236000053360000e0360100e1370000e637000004380000053800003d380000673800006a3800006d380000d13800002b390000443901004d3a000080480000384a00000e4e000064500000925000000e5100007151000094510100fc5300001054000030540000b85a0000005f0000e76000001267000031750000337500004075000056750000597500006a7800004b790000589c00005c9c00005e9c00005f9c00006b9c00006e9c0000\",\"task_finishtime\":\"7500981c22505758ab1c1a005858fe3dc05ca459ed4d433d5b580653ad215b580753f7265b58bd1c06a75858072e2b4da359dd2d694da359c61cd9195b58c91cdd435b58ee4d61475b58085364475b58882d13d15b58ef4dd0e45b580b53d7e45b580a53a2e75b58e31c2ff85b58f14d7d8160580e53e55f5c580f5393615c58ef1cf88c5c588a2d8ce76158f24dca1c5d581053b8355d58115385385d58fb1c198260580c535bd661580d5375db6158f04d3acf6158041d8ad66158f54d89716458f44d7ace6958145395d46958155354ff68580a1d853563588d2d440869581653937164580d1d60726458175343816458cd209f63a559f34df1cc65581253bcd16558135350d56558161d63cd65583654f0cee5581c1daa1f67581f1deaf46858221d2ace6958f64d155b7958195302276b581853512e74588f2decdd8258281d635f6c582e54b468b8582b1df3e96e582e1d98447458f74dc92884581a53797a81581b539a7d8158311dba987558341d306a7a58f84d57c48258371d763b7c581c539fc882581d5334cc82583a1d2f2380583d1d39748158ac2431288458401d362884581328ed79a159431d23d28b58902d3357a359fa4d37009c59461d236e9a587f175b7a8e58491dc813a1584c1d0630c4584f1db141e5585f3e8cea9d59963e90b0945953c307b74959437553b2a459521dd3af77596cc3ac136c59551dcbfb80598960e8b7a459fc4d9af8965920531c0f9c59215363109c592453682796592553072b96598460547ea459581d5b518a59f94dc5259a591e539f369a591f53ad389a59796035e89d595b1d5cdd9459fb4d0a44935922534f228e59b3c353b2a459273668029c595e1d7d5fa5592228834b9f592c28614d9f59174111b29a59ff4db6639d59004e20449f59fe4db8b8a0594b75995ea55980c789cb8d5a83c70a97fa597e77eca96e5a4e9ceca96e5aa3c807b5705a1dc989cb8d5a\",\"task_inventory\":[{\"id\":3774,\"pos\":0,\"count\":1,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":14032,\"pos\":1,\"count\":1,\"max_count\":100,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":3021,\"pos\":2,\"count\":1,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":7516,\"pos\":3,\"count\":1,\"max_count\":1000,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":20564,\"pos\":4,\"count\":1,\"max_count\":1,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":20594,\"pos\":5,\"count\":1,\"max_count\":1,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":20771,\"pos\":6,\"count\":1,\"max_count\":1,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0},{\"id\":14067,\"pos\":7,\"count\":1,\"max_count\":100,\"data\":\"\",\"proctype\":0,\"expire_date\":0,\"guid1\":0,\"guid2\":0,\"mask\":0}]}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/role/character",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"role",
+						"character"
+					]
+				},
+				"description": "Role Response Character"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/role/resetbank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "roleid",
+							"value": "1034",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/role/resetbank",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"role",
+						"resetbank"
+					]
+				},
+				"description": "Role resetbank character"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/role/rename",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "roleid",
+							"value": "1034",
+							"type": "text"
+						},
+						{
+							"key": "oldname",
+							"value": "Free-WB",
+							"type": "text"
+						},
+						{
+							"key": "newname",
+							"value": "Free-Gay",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/role/rename",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"role",
+						"rename"
+					]
+				},
+				"description": "Role rename character"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/user/removelock",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "YOURAPISUPERSECRETKEYVALUE"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userid",
+							"value": "199040",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/user/removelock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"user",
+						"removelock"
+					]
+				},
+				"description": "Remove user lock"
+			},
+			"response": []
+		}
+	]
+}
