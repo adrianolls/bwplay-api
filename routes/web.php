@@ -31,10 +31,10 @@ $app->group(['middleware' => 'api'], function () use ($app) {
      * Roles Routes
      */
     $app->post('role/character', 'RoleController@characterRequest');
+    $app->put('role/character', 'RoleController@characterResponse');
     $app->post('role/faction', 'RoleController@factionRequest');
     $app->post('role/userfaction', 'RoleController@userfactionRequest');
     $app->post('role/charactername', 'RoleController@characternameRequest');
-    $app->put('role/character', 'RoleController@characterResponse');
     $app->post('role/resetbank', 'RoleController@resetBankRequest');
     $app->post('role/rename', 'RoleController@renameRequest');
     $app->post('role/banrole', 'RoleController@banRole');
