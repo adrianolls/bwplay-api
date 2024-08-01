@@ -4,15 +4,16 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    # image: php:5.6.40-zts-stretch
     restart: unless-stopped
     tty: true
     environment:
       SERVICE_NAME: app
       SERVICE_TAGS: dev
+      APP_ENV: testing
     working_dir: /var/www
     volumes:
       - ./:/var/www
       - .docker/php/local.ini:/usr/local/etc/php/conf.d/local.ini
     ports:
-      - "9090:9000"
+      - "8080:8080"
+    command: php -S 0.0.0.0:8080 -t public/

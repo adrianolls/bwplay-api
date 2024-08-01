@@ -20,17 +20,22 @@ $app->group(['middleware' => 'api'], function () use ($app) {
     $app->post('game/onlines', 'GameController@onlineListRequest');
     $app->post('game/email', 'GameController@emailRequest');
     $app->post('game/setdoublerate', 'GameController@setDoubleRate');
+    $app->post('game/getserverattr', 'GameController@getServerAttr');
+    $app->post('game/setserverattr', 'GameController@setServerAttr');
+    $app->post('game/test', 'GameController@test');
 
     /**
      * User Routes
      */
     $app->post('user/roles', 'UserController@rolesRequest');
     $app->post('user/removelock', 'UserController@removelockRequest');
+    $app->post('user/onlinestatus', 'UserController@onlineStatusRequest');
 
     /**
      * Roles Routes
      */
     $app->post('role/character', 'RoleController@characterRequest');
+    $app->post('role/characterDetail', 'RoleController@characterDetailRequest');
     $app->put('role/character', 'RoleController@characterResponse');
     $app->post('role/faction', 'RoleController@factionRequest');
     $app->post('role/userfaction', 'RoleController@userfactionRequest');

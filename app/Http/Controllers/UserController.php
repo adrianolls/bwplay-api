@@ -38,4 +38,14 @@ class UserController extends Controller {
         return response()->json($data, 200);
     }
 
+    public function onlineStatusRequest(Request $request) {
+        $getOnlineStatus = new WritePacket();
+        $getOnlineStatus->WriteUInt32($request->userid);
+        $getOnlineStatus->Pack(Opcodes::$user['onlineStatus']);
+        $getOnlineStatus->Send(WritePacket::GDELIVERYD_PORT);
+        $result = new ReadPacket($getOnlineStatus);
+        $result->ReadPacketInfo();
+        $data['status'] = $result->ReadUInt32(); // RoleStatus
+        return response()->json($data, 200);
+    }
 }

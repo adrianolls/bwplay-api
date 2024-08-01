@@ -27,6 +27,11 @@ class RoleController extends Controller {
         return response()->json($role, 200);
     }
 
+    public function characterDetailRequest(Request $request) {
+        $role = $this->characterDetailGet($request->roleid);
+        return response()->json($role, 200);
+    }
+
     public function characternameRequest(Request $request) {
         $rolename = $request->rolename;
 
@@ -100,10 +105,31 @@ class RoleController extends Controller {
         $getrolearg->Send(WritePacket::GAMEDBD_PORT);
         $getroleres = new ReadPacket($getrolearg);
         $info = $getroleres->ReadPacketInfo();
+
         $getroleres->ReadUInt32(); // ???
         $getroleres->ReadUInt32(); // Return Code
         $data = $getroleres->ReadBytes($info['Length']);
         $role = Marshallizer::unmarshal($data, $this->roleProtocol['role']);
+        return $role;
+    }
+
+    public function characterDetailGet($roleid) {
+        $getrolearg = new WritePacket();
+        $getrolearg->WriteUInt32(-1);
+        $getrolearg->WriteUInt32($roleid);
+        $getrolearg->WriteUInt32(63);
+        $getrolearg->WriteUInt32(1);
+        $getrolearg->Pack(Opcodes::$role['getRoleDetail']);
+        $getrolearg->Send(WritePacket::GAMEDBD_PORT);
+        $getroleres = new ReadPacket($getrolearg);
+        $info = $getroleres->ReadPacketInfo();
+
+        $getroleres->ReadUInt32(); // ???
+        $getroleres->ReadUInt32(); // Return Code
+        $getroleres->ReadByte(); // ???
+        $getroleres->ReadUInt32(); // ???
+        $data = $getroleres->ReadBytes($info['Length']);
+        $role = Marshallizer::unmarshal($data, $this->roleProtocol['roleDetail']);
         return $role;
     }
 

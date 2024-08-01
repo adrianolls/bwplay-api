@@ -136,4 +136,77 @@ class GameController extends Controller {
         $email->Send(WritePacket::GDELIVERYD_PORT);
     }
 
+    public function getServerAttr(Request $request){
+
+        $getattr = new WritePacket();
+        $getattr->WriteInt32(-1); // retcode
+        $getattr->WriteInt32(32); // gmroleid
+        $getattr->WriteUInt32(-1); // localsid
+        $getattr->WriteUByte($request->attr); // attribute
+        $getattr->Pack(Opcodes::$game['GetGMAttr']);
+        $getattr->Send(WritePacket::GDELIVERYD_PORT);
+        $getattrRes = new ReadPacket($getattr);
+        // echo 'data:' . bin2hex($getattrRes->data) . "\n";
+
+        $info = $getattrRes->ReadPacketInfo();
+        $data = $getattrRes->ReadOctets();
+        // echo 'hex:' . $data . "\n";
+    
+        $lastbyte = substr($data, -2); // GET THE TWO LAST BYTES FROM RESPONSE
+        // echo 'lastbyte:' . $lastbyte . "\n";
+        $byteval = hexdec($lastbyte); // CONVERT THE HEX REPRESENTATION INTO BYTE VALUE
+        // echo 'lastbyte:' . $byteval . "\n";
+        if($request->type == 1){ // EXP READING ( RETURN FLOAT MOST OF TIMES LIKE 5.0 )
+            $doubleValue = (double)$byteval;
+            return ($doubleValue / 10);
+        }
+
+        if($request->type == 0){ // OTHERS TYPES (RETURN 0 OR 1 MOST OF TIMES)
+            return ($byteval);
+        }
+
+    }
+
+    public function setServerAttr(Request $request){
+
+        $setattr = new WritePacket();
+        $setattr->WriteInt32(-1); // retcode
+        $setattr->WriteInt32(32); // gmroleid
+        $setattr->WriteUInt32(-1); // localsid
+        // echo 'request0:' . bin2hex($setattr->request) . "\n";
+        $setattr->WriteUByte($request->attr); // attribute
+        // echo 'request1:' . bin2hex($setattr->request) . "\n";
+
+        if($request->type == 1){ // EXP SETTING ( FLOATING VALUE LIKE 4.9)
+            $val = doubleval($request->value) * 10;
+            // echo 'val:' . $val . "\n";
+            $byteString = pack('C', $val);
+            $hex_representation = bin2hex($byteString);
+            // echo 'hex_representation:' . $hex_representation . "\n";
+            $setattr->WriteOctets($hex_representation);
+
+        } else {
+            $val = doubleval($request->value); // OTHER SETTING ( USUALLY VALUE ARE 0 OR 1  )
+            $byteString = pack('C', $val);
+            $hex_representation = bin2hex($byteString);
+            $setattr->WriteOctets($hex_representation);
+        }
+        $setattr->Pack(Opcodes::$game['SetGMAttr']);
+        // echo 'request_last:' . bin2hex($setattr->request) . "\n";
+        $setattr->Send(WritePacket::GDELIVERYD_PORT);
+    }
+    public function test(Request $request) {
+        $octets = hex2bin($request->octets);
+        // echo 'octets from server:' . bin2hex($octets) . "\n";
+        $res = new ReadPacket(null, $octets);
+        $oct_res = $res->ReadOctets();
+        $getattr = new WritePacket();
+        $getattr->WriteOctets($oct_res); // retcode
+        // echo 'data:' . bin2hex($getattr->request) . " :: ";
+
+        $test = null;
+        
+        return response()->json($test, 200, ['Content-Type' => 'text/html']);
+    }
+
 }

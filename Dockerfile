@@ -1,4 +1,4 @@
-FROM php:5.6-fpm-stretch
+FROM php:7.2.8-stretch
 
 # Copy composer.lock and composer.json
 COPY composer.lock composer.json /var/www/
@@ -26,7 +26,7 @@ RUN apt update && apt install -y \
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install extensions
-RUN docker-php-ext-install pdo_mysql mbstring zip exif pcntl
+RUN docker-php-ext-install pdo_mysql mbstring zip exif pcntl sockets
 RUN docker-php-ext-configure gd --with-gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ --with-png-dir=/usr/include/
 RUN docker-php-ext-install gd
 
@@ -43,9 +43,10 @@ COPY . /var/www
 # Copy existing application directory permissions
 COPY --chown=www:www . /var/www
 
+RUN composer update
+
 # Change current user to www
 USER www
 
-# Expose port 9000 and start php-fpm server
-EXPOSE 9000
-CMD ["php-fpm"]
+EXPOSE 8080
+# CMD ["php -S 0.0.0.0:8080"]

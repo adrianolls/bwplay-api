@@ -7,9 +7,14 @@ class ReadPacket
 
     public $data, $pos;
 
-    function __construct($obj = null)
+    function __construct($obj = null, $buff = null)
     {
-        $this->data = $obj->response;
+        if ($buff)
+        {
+            $this->data = $buff;
+        }
+        else
+            $this->data = $obj->response;
     }
 
     public function ReadBytes($length)
@@ -83,6 +88,7 @@ class ReadPacket
     public function ReadOctets()
     {
         $length = $this->ReadCUInt32();
+        // echo "cuint length:" . $length . "\n";
 
         $value = unpack("H*", substr($this->data, $this->pos, $length));
         $this->pos += $length;
@@ -123,6 +129,7 @@ class ReadPacket
     public function ReadCUInt32()
     {
         $value = unpack("C", substr($this->data, $this->pos, 1));
+        // echo "read cuint first byte:" . $value[1] . "\n";
         $value = $value[1];
         $this->pos++;
 
